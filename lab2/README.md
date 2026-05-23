@@ -26,6 +26,12 @@ pip install -r lab2/requirements.txt
 python lab2/app.py
 ```
 
+## Tu kiem tra truoc khi demo
+
+```bash
+python lab2/self_check.py
+```
+
 API mac dinh chay tai:
 
 ```text
@@ -91,3 +97,14 @@ http://127.0.0.1:5000
   "key": 4
 }
 ```
+
+## Import vao Postman
+
+- File import nhanh: `lab2/postman_collection.json`
+- File body mau: `lab2/postman_samples.json`
+
+## De bai trong repo nay da ca nhan hoa
+
+- mau du lieu test da duoc doi
+- bo sung file tu kiem tra
+- bo sung ghi chu giai thich va cau truc rieng
