@@ -1,0 +1,50 @@
+{
+  "caesar_encrypt": {
+    "method": "POST",
+    "url": "http://127.0.0.1:5000/api/caesar/encrypt",
+    "body": {
+      "plain_text": "HELLO",
+      "key": 3
+    }
+  },
+  "caesar_decrypt": {
+    "method": "POST",
+    "url": "http://127.0.0.1:5000/api/caesar/decrypt",
+    "body": {
+      "cipher_text": "KHOOR",
+      "key": 3
+    }
+  },
+  "vigenere_encrypt": {
+    "method": "POST",
+    "url": "http://127.0.0.1:5000/api/vigenere/encrypt",
+    "body": {
+      "plain_text": "ATTACKATDAWN",
+      "key": "LEMON"
+    }
+  },
+  "railfence_encrypt": {
+    "method": "POST",
+    "url": "http://127.0.0.1:5000/api/railfence/encrypt",
+    "body": {
+      "plain_text": "WEAREDISCOVERED",
+      "key": 3
+    }
+  },
+  "playfair_encrypt": {
+    "method": "POST",
+    "url": "http://127.0.0.1:5000/api/playfair/encrypt",
+    "body": {
+      "plain_text": "HIDETHEGOLD",
+      "key": "MONARCHY"
+    }
+  },
+  "transposition_encrypt": {
+    "method": "POST",
+    "url": "http://127.0.0.1:5000/api/transposition/encrypt",
+    "body": {
+      "plain_text": "HELLO WORLD",
+      "key": 4
+    }
+  }
+}
