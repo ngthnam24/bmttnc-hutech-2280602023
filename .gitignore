@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build artifacts
+dist/
+build/
+.next/
+coverage/
+
+# Local env
+.env
+.env.*
