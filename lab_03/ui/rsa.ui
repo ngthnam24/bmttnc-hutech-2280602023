@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>650</width><height>550</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>RSA Cipher</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="keyGroup">
+      <property name="title"><string>Key Generation</string></property>
+      <layout class="QVBoxLayout" name="keyLayout">
+       <item><widget class="QPushButton" name="generateKeysBtn"><property name="text"><string>Generate Keys</string></property></widget></item>
+       <item><widget class="QLabel" name="keyStatusLabel"><property name="text"><string>Status:</string></property></widget></item>
+       <item><widget class="QTextEdit" name="keyStatus"><property name="readOnly"><bool>true</bool></property><property name="maximumSize"><size><width>16777215</width><height>50</height></size></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="encryptGroup">
+      <property name="title"><string>Encrypt</string></property>
+      <layout class="QVBoxLayout" name="encryptLayout">
+       <item><layout class="QHBoxLayout"><item><widget class="QLabel"><property name="text"><string>Plain Text:</string></property></widget></item><item><widget class="QLineEdit" name="encryptPlainText"/></item></layout></item>
+       <item><widget class="QPushButton" name="encryptBtn"><property name="text"><string>Encrypt</string></property></widget></item>
+       <item><widget class="QLabel"><property name="text"><string>Encrypted Text:</string></property></widget></item>
+       <item><widget class="QTextEdit" name="encryptResult"><property name="readOnly"><bool>true</bool></property><property name="maximumSize"><size><width>16777215</width><height>60</height></size></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="decryptGroup">
+      <property name="title"><string>Decrypt</string></property>
+      <layout class="QVBoxLayout" name="decryptLayout">
+       <item><layout class="QHBoxLayout"><item><widget class="QLabel"><property name="text"><string>Cipher Text:</string></property></widget></item><item><widget class="QLineEdit" name="decryptCipherText"/></item></layout></item>
+       <item><widget class="QPushButton" name="decryptBtn"><property name="text"><string>Decrypt</string></property></widget></item>
+       <item><widget class="QLabel"><property name="text"><string>Decrypted Text:</string></property></widget></item>
+       <item><widget class="QTextEdit" name="decryptResult"><property name="readOnly"><bool>true</bool></property><property name="maximumSize"><size><width>16777215</width><height>60</height></size></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="signGroup">
+      <property name="title"><string>Sign</string></property>
+      <layout class="QVBoxLayout" name="signLayout">
+       <item><layout class="QHBoxLayout"><item><widget class="QLabel"><property name="text"><string>Message:</string></property></widget></item><item><widget class="QLineEdit" name="signMessage"/></item></layout></item>
+       <item><widget class="QPushButton" name="signBtn"><property name="text"><string>Sign</string></property></widget></item>
+       <item><widget class="QLabel"><property name="text"><string>Signature:</string></property></widget></item>
+       <item><widget class="QTextEdit" name="signResult"><property name="readOnly"><bool>true</bool></property><property name="maximumSize"><size><width>16777215</width><height>60</height></size></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="verifyGroup">
+      <property name="title"><string>Verify</string></property>
+      <layout class="QVBoxLayout" name="verifyLayout">
+       <item><layout class="QHBoxLayout"><item><widget class="QLabel"><property name="text"><string>Message:</string></property></widget></item><item><widget class="QLineEdit" name="verifyMessage"/></item></layout></item>
+       <item><layout class="QHBoxLayout"><item><widget class="QLabel"><property name="text"><string>Signature:</string></property></widget></item><item><widget class="QLineEdit" name="verifySignature"/></item></layout></item>
+       <item><widget class="QPushButton" name="verifyBtn"><property name="text"><string>Verify</string></property></widget></item>
+       <item><widget class="QLabel"><property name="text"><string>Result:</string></property></widget></item>
+       <item><widget class="QTextEdit" name="verifyResult"><property name="readOnly"><bool>true</bool></property><property name="maximumSize"><size><width>16777215</width><height>50</height></size></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
