@@ -1,13 +1,28 @@
 # BMTTNC
 
-Kho nay dang chua bai thuc hanh mon Bao mat thong tin nang cao.
+## Cau truc
 
-## Noi dung hien co
+- `lab_01/`
+- `lab_02/`
 
-- `lab1/`: Python co ban cho phan thuc hanh mo dau
-
-## Cach chay Lab 1
+## Chay lab_01
 
 ```bash
-python lab1/main.py
+python lab_01/hello.py
+python lab_01/ex02_01.py
+python lab_01/ex03/ex03_01.py
+python lab_01/ex04/Main.py
+```
+
+## Chay lab_02 API
+
+```bash
+pip install -r lab_02/requirements.txt
+python lab_02/api.py
+```
+
+## Chay lab_02 Web
+
+```bash
+python lab_02/app.py
 ```
