@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>600</width><height>400</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Caesar Cipher</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="encryptGroup">
+      <property name="title"><string>Encrypt</string></property>
+      <layout class="QVBoxLayout" name="encryptLayout">
+       <item><layout class="QHBoxLayout" name="encryptInputLayout">
+        <item><widget class="QLabel" name="encryptPlainLabel"><property name="text"><string>Plain Text:</string></property></widget></item>
+        <item><widget class="QLineEdit" name="encryptPlainText"/></item>
+       </layout></item>
+       <item><layout class="QHBoxLayout" name="encryptKeyLayout">
+        <item><widget class="QLabel" name="encryptKeyLabel"><property name="text"><string>Key:</string></property></widget></item>
+        <item><widget class="QLineEdit" name="encryptKey"/></item>
+       </layout></item>
+       <item><widget class="QPushButton" name="encryptBtn"><property name="text"><string>Encrypt</string></property></widget></item>
+       <item><widget class="QLabel" name="encryptResultLabel"><property name="text"><string>Encrypted Text:</string></property></widget></item>
+       <item><widget class="QTextEdit" name="encryptResult"><property name="readOnly"><bool>true</bool></property><property name="maximumSize"><size><width>16777215</width><height>60</height></size></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="decryptGroup">
+      <property name="title"><string>Decrypt</string></property>
+      <layout class="QVBoxLayout" name="decryptLayout">
+       <item><layout class="QHBoxLayout" name="decryptInputLayout">
+        <item><widget class="QLabel" name="decryptCipherLabel"><property name="text"><string>Cipher Text:</string></property></widget></item>
+        <item><widget class="QLineEdit" name="decryptCipherText"/></item>
+       </layout></item>
+       <item><layout class="QHBoxLayout" name="decryptKeyLayout">
+        <item><widget class="QLabel" name="decryptKeyLabel"><property name="text"><string>Key:</string></property></widget></item>
+        <item><widget class="QLineEdit" name="decryptKey"/></item>
+       </layout></item>
+       <item><widget class="QPushButton" name="decryptBtn"><property name="text"><string>Decrypt</string></property></widget></item>
+       <item><widget class="QLabel" name="decryptResultLabel"><property name="text"><string>Decrypted Text:</string></property></widget></item>
+       <item><widget class="QTextEdit" name="decryptResult"><property name="readOnly"><bool>true</bool></property><property name="maximumSize"><size><width>16777215</width><height>60</height></size></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
