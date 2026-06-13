@@ -1,14 +1,13 @@
-def is_prime(number: int) -> bool:
-    if number < 2:
+def kiem_tra_so_nguyen_to(n):
+    if n <= 1:
         return False
-    for divisor in range(2, int(number ** 0.5) + 1):
-        if number % divisor == 0:
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
             return False
     return True
-
-
-number = int(input("Nhap mot so nguyen: "))
-if is_prime(number):
-    print(f"{number} la so nguyen to.")
+# Nhập số cần kiểm tra từ người dùng
+num = int(input("Nhập số cần kiểm tra: "))
+if kiem_tra_so_nguyen_to(num):
+    print(num, "là số nguyên tố.")
 else:
-    print(f"{number} khong phai la so nguyen to.")
+    print(num, "không phải là số nguyên tố.")
